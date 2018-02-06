@@ -4,5 +4,5 @@ services:
     image: sd1620597/${JOB_NAME}:${TAG}
     ports: 
       - 8889:9090
-    command: java -jar /usr/local/study_boot_demo-0.0.1-SNAPSHOT.jar --spring.profiles.active={profile}
+    command: java -jar /usr/local/study_boot_demo-0.0.1-SNAPSHOT.jar --spring.profiles.active=${PROFILE}
     build: .
